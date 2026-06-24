@@ -47,8 +47,7 @@ const QUESTIONS = [
   { id: 'carbs', type: 'single', q: 'When you eat a high-carb or sugary meal?', opts: ['I crash hard and feel foggy', 'I feel fine — no real reaction', 'I feel inflamed — bloated or achy', 'I feel anxious or jittery'] }
 ];
 
-const OPENROUTER_KEY = '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';
-
+const OPENROUTER_KEY = process.env.REACT_APP_OPENROUTER_KEY;
 function scorePCOS(answers, multi) {
   let s = { insulin: 0, adrenal: 0, inflammatory: 0, postpill: 0 };
   if (answers.weight === 0) s.insulin += 3;
