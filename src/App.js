@@ -276,9 +276,7 @@ export default function App() {
   const q = QUESTIONS[qCurrent];
   const typeLabel = { insulin: 'Insulin-resistant', adrenal: 'Adrenal', inflammatory: 'Inflammatory', postpill: 'Post-pill' };
 
-  const btn = (onClick, children, style = {}) => (
-    <button onClick={onClick} style={{ border: 'none', cursor: 'pointer', fontFamily: 'inherit', ...style }}>{children}</button>
-  );
+  
 
   return (
     <div style={{ maxWidth: 680, margin: '0 auto', background: pkl, minHeight: '100vh', fontFamily: "'Inter', system-ui, sans-serif" }}>
